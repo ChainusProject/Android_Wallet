@@ -1,13 +1,10 @@
 <img src="https://nper.io/dapp/logo_wallet_dark.png" width="300" />
-# NPER Wallet for Android
-NPER Wallet is a cryptocurrency wallet application for Android. By using NPER Wallet on your
- device, you can create your own wallets for various tokens, manage your deposits, and send/receive 
- tokens with your account. Also, we have various features explained below.
- 
-This source code was only partially released for security reasons due to the nature of the wallet development.
-We will update the development status with screenshots or other kinds of method in the future.
 
-<br />
+# NPER Wallet for Android
+NPER Wallet is a cryptocurrency wallet application for Android. By using NPER Wallet on your device, you can create your own wallets for various tokens, manage your deposits, and send/receive tokens with your account. Also, we have various features explained below.
+ 
+This source code was only partially released for security reasons due to the nature of the wallet development. We will update the development status with screenshots or other kinds of method in the future.
+
 ## Table of Contents
 * Features
 * How-to build
@@ -15,7 +12,6 @@ We will update the development status with screenshots or other kinds of method 
 * Developers
 * Support
 
-<br />
 ## Features
 ### Home
 This is home screen for NPER Wallet.
@@ -37,7 +33,6 @@ You can
 * View Transaction history
 * Backup your Keystore file
 
-<br />
 ## How to build
 ### Prerequisites
 You need following features to build NPER Wallet.
@@ -57,16 +52,13 @@ You need following features to build NPER Wallet.
 * Build
   * Build source files using Android Studio
 
-<br />
 ## How-to contribute
 Create a new pull request!
 
-<br />
 ## Developers
 @Sam <br />
 @Henry
 
-<br />
 ## Support
 Feel free to ask!<br />
 <info@hexlant.com>
