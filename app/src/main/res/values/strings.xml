@@ -1,3 +1,66 @@
 <resources>
-    <string name="app_name">WalletShell</string>
+    <string name="app_name">Wallet</string>
+
+    <string name="title_activity_backup">Keystore File Backup</string>
+    <string name="title_activity_deposit">Deposit</string>
+    <string name="title_activity_qr_scan">QR Code Scan</string>
+    <string name="title_activity_setting_currency">Currency Setting</string>
+    <string name="title_activity_setting_menu">Setting</string>
+    <string name="title_activity_setting_version">Version</string>
+
+    <string name="ok">OK</string>
+    <string name="retry">Retry</string>
+    <string name="start">Start</string>
+
+    <string name="message_clipboard_copied">ADDRESS COPIED</string>
+
+    <string name="setting_dialog_title_0">Select Asset</string>
+    <string name="setting_dialog_title_2">Select Language</string>
+
+    <string name="dialog_reconnect_disconnected">Disconnected</string>
+    <string name="dialog_reconnect_btnreconnect">RECONNECT</string>
+
+    <string name="menu_scan_title">scan</string>
+    <string name="menu_drawer_send">Send</string>
+    <string name="menu_drawer_deposit">Deposit</string>
+    <string name="menu_drawer_history">Transaction History</string>
+    <string name="menu_drawer_setting">Setting</string>
+
+    <string name="sheet_bottom_ettoaddress">To Address</string>
+    <string name="sheet_bottom_etamount">Amount</string>
+    <string name="sheet_bottom_btnmax">MAX</string>
+    <string name="sheet_bottom_tvbalance">NPER Balance : 235,182,352,130</string>
+    <string name="sheet_bottom_tvgasprice">GAS Price: 41Gwei</string>
+    <string name="sheet_bottom_tvslow">Slow</string>
+    <string name="sheet_bottom_tvfast">Fast</string>
+    <string name="sheet_bottom_tvgaslimit">GAS Limit</string>
+    <string name="sheet_bottom_etgaslimit">Gas Limit</string>
+    <string name="sheet_bottom_tvethbalance">ETH Balance : 235,182,352,130</string>
+    <string name="sheet_bottom_btnsend">SEND</string>
+
+    <string name="nav_header_tv">My Address</string>
+    <string name="nav_header_btncopyaddress">COPY ADDRESS</string>
+
+    <string name="layout_token_tvequal">=</string>
+    <string name="layout_token_tvcurrencyicon">$</string>
+    <string name="layout_token_tvcurrency">USD</string>
+
+    <string name="activity_qr_scan_bottom">- Scanning Automatically -\nScan QR Code</string>
+    <string name="activity_main_splash_bottom">NPER Inc.</string>
+
+    <string name="activity_deposit_btncopyaddress">COPY</string>
+
+    <string name="activity_backup_tvwarning">Warning!</string>
+    <string name="activity_backup_tv3">Backup Your</string>
+    <string name="activity_backup_tv4">Keystore File</string>
+    <string name="activity_backup_tv5">Do not lose it! / It cannot be recovered if you lose it.</string>
+    <string name="activity_backup_tv6">Do not share it! / Your funds will be stolen</string>
+    <string name="activity_backup_tv7">if you use this file on a malicious/phishing site.</string>
+    <string name="activity_backup_tv8">Make a backup! / Secure it like the millions of dollars</string>
+    <string name="activity_backup_tv9">it may be one day be worth.</string>
+    <string name="activity_backup_btnbackup">SAVE KEYSTORE FILE TO DEVICE</string>
+
+    <string name="receiver_networkchange_wifi_enabled">Wifi enabled</string>
+    <string name="receiver_networkchange_mobile_enabled">Mobile data enabled</string>
+    <string name="receiver_networkchange_no_connection">Not connected</string>
 </resources>

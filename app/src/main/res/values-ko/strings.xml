@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wallet</string>
+
+    <string name="ok">OK</string>
+    <string name="retry">Retry</string>
+    <string name="start">Start</string>
+</resources>

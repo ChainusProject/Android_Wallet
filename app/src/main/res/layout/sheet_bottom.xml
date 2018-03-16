@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="423.3dp"
+    android:paddingHorizontal="13dp"
+    android:clickable="true"
+    android:elevation="30dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="53.3dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <com.hexlant.nper.walletshell.ui.RealtimeBlurView
+        android:id="@+id/ivBlur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10.7dp"
+        android:layout_marginTop="11.3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/send" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:paddingLeft="14dp" android:paddingRight="14dp">
+
+        <EditText android:id="@+id/etToAddress"
+            android:layout_width="match_parent"
+            android:layout_height="34.7dp"
+            android:layout_marginTop="69dp"
+            android:inputType="text"
+            android:hint="@string/sheet_bottom_ettoaddress"
+            android:textColorHint="#A0A0A0"
+            android:textSize="10.5dp"
+            android:background="@android:color/white"
+            android:paddingLeft="13dp"
+            android:paddingRight="49.7dp"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <EditText android:id="@+id/etAmount"
+            android:layout_width="187dp" android:layout_height="34.7dp"
+            android:layout_marginTop="12dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/sheet_bottom_etamount"
+            android:textColorHint="#A0A0A0"
+            android:textSize="10.5dp"
+            android:background="@android:color/white"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etToAddress" />
+
+        <Spinner
+            android:id="@+id/spTokenType"
+            android:layout_width="66.7dp"
+            android:layout_height="34.7dp"
+            android:layout_marginStart="3.7dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/spinner_background"
+            app:layout_constraintStart_toEndOf="@id/etAmount"
+            app:layout_constraintTop_toBottomOf="@id/etToAddress" />
+
+        <Button android:id="@+id/btnMax"
+            android:layout_width="45dp" android:layout_height="34.7dp"
+            android:padding="0dp"
+            android:text="@string/sheet_bottom_btnmax"
+            android:textColor="@drawable/selector_button_text"
+            android:background="@drawable/selector_button_background"
+            android:gravity="center"
+            android:textSize="10.5dp"
+            android:layout_marginStart="3.7dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/spTokenType"
+            app:layout_constraintTop_toBottomOf="@id/etToAddress"/>
+
+        <TextView android:id="@+id/tvBalance"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="10.7dp" android:textColor="@android:color/white"
+            android:text="@string/sheet_bottom_tvbalance"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/btnMax"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView android:id="@+id/tvGasPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sheet_bottom_tvgasprice"
+            android:textColor="@android:color/white"
+            android:textSize="11.3dp"
+
+            android:layout_marginTop="17.7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBalance"/>
+
+
+        <TextView android:id="@+id/tvSlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sheet_bottom_tvslow"
+            android:textColor="@android:color/white"
+            android:textSize="11.3dp"
+            android:layout_marginTop="11.3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGasPrice"/>
+        
+        <SeekBar android:id="@+id/sbGasPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:progress="1"
+            android:max="99"
+            android:thumb="@drawable/sb_gasprice_thumb"
+            android:progressDrawable="@drawable/sb_gasprice"
+            android:layout_marginStart="3.3dp"
+            android:layout_marginEnd="4.3dp"
+            app:layout_constraintTop_toTopOf="@id/tvSlow"
+            app:layout_constraintBottom_toBottomOf="@id/tvSlow"
+            app:layout_constraintStart_toEndOf="@id/tvSlow"
+            app:layout_constraintEnd_toStartOf="@id/tvFast"
+            />
+
+
+
+        <TextView android:id="@+id/tvFast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sheet_bottom_tvfast"
+            android:textColor="@android:color/white"
+            android:textSize="11.3dp"
+
+            android:layout_marginTop="11.3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGasPrice"/>
+
+        <TextView android:id="@+id/tvGasLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sheet_bottom_tvgaslimit"
+            android:textColor="@android:color/white"
+            android:textSize="11.3dp"
+            android:layout_marginTop="24.3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSlow"/>
+
+
+        <RelativeLayout android:id="@+id/relativeGas"
+            android:layout_width="match_parent" android:layout_height="34.7dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvGasLimit">
+
+            <EditText android:id="@+id/etGasLimit"
+                android:layout_width="153dp" android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:hint="@string/sheet_bottom_etgaslimit"
+                android:textColorHint="#A0A0A0"
+                android:textSize="10.5dp"
+                android:background="@android:color/white"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView android:id="@+id/tvETHBalance"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_alignParentEnd="true" android:layout_alignParentBottom="true"
+                android:textSize="10.7dp" android:textColor="@android:color/white"
+                android:text="@string/sheet_bottom_tvethbalance"/>
+        </RelativeLayout>
+
+
+
+
+        <Button android:id="@+id/btnSend"
+            android:layout_width="match_parent" android:layout_height="34.7dp"
+            android:text="@string/sheet_bottom_btnsend"
+            android:textColor="@drawable/selector_button_text"
+            android:background="@drawable/selector_button_background"
+            android:gravity="center"
+            android:textSize="10.5dp"
+            android:layout_marginTop="50.3dp"
+            app:layout_constraintTop_toBottomOf="@id/relativeGas"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
