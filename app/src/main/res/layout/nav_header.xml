@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="160dp">
+
+    <com.hexlant.nper.walletshell.ui.RealtimeBlurView
+        android:id="@+id/ivBlur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:paddingLeft="20.7dp" android:paddingTop="18.7dp"  android:paddingBottom="23dp">
+
+        <ImageView android:id="@+id/ivLogo"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@drawable/logo_nper_text" />
+
+
+        <ImageView android:id="@+id/ivQrcode"
+            android:layout_width="74dp" android:layout_height="74dp"
+            android:layout_marginTop="27.3dp"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo"/>
+
+        <TextView android:id="@+id/tv"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/nav_header_tv" android:textColor="@android:color/white" android:textSize="13.3dp" android:textStyle="bold"
+            android:layout_marginStart="13.3dp"
+            app:layout_constraintLeft_toRightOf="@id/ivQrcode"
+            app:layout_constraintTop_toTopOf="@id/ivQrcode"/>
+
+
+        <TextView android:id="@+id/tvMyAddress"
+            android:layout_width="145dp" android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="7dp"
+            android:textColor="@android:color/white" android:textSize="9.3dp"
+            app:fontName="custom1"
+            app:layout_constraintTop_toBottomOf="@id/tv"
+            app:layout_constraintLeft_toLeftOf="@id/tv"
+            tools:ignore="MissingPrefix" />
+
+        <Button android:id="@+id/btnCopyAddress"
+            android:layout_width="83dp" android:layout_height="25dp"
+            android:background="@drawable/selector_button_background"
+            android:text="@string/nav_header_btncopyaddress" android:textSize="9.3dp" android:textColor="@drawable/selector_button_text" android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/ivQrcode"
+            app:layout_constraintLeft_toLeftOf="@id/tv"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
