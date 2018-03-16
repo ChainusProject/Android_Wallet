@@ -6,11 +6,11 @@ NPER Wallet is a cryptocurrency wallet application for Android. By using NPER Wa
 This source code was only partially released for security reasons due to the nature of the wallet development. We will update the development status with screenshots or other kinds of method in the future.
 
 ## Table of Contents
-* Features
-* How-to build
-* How-to contribute
-* Developers
-* Support
+* [Features](#features)
+* [How-to build](#how-to-build)
+* [How-to contribute](#how-to-contribute)
+* [Developers](#developers)
+* [Support](#support)
 
 ## Features
 ### Home
@@ -33,7 +33,7 @@ You can
 * View Transaction history
 * Backup your Keystore file
 
-## How to build
+## How-to build
 ### Prerequisites
 You need following features to build NPER Wallet.
 
